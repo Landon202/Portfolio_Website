@@ -127,12 +127,13 @@ body{
 /*About Styles*/
 .two-column-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .profile-image-wrapper img {
-    width: 50%;
-    position: center;
+    float:right;
+    max-width: 320px;
+    max-height: 100%;
 }
 
 .profile-content-wrapper {
@@ -141,4 +142,38 @@ body{
 
 .profile-content-wrapper h1{
     color: black;
+    font-weight:lighter;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.profile-content-wrapper-contact{
+    color: black;
+    font-weight:lighter;
+    font-size: large;
+    margin-bottom: 5px;
+    margin-top: 10%;
+}
+
+.profile-content-wrapper p{
+    color: dimgrey;
+    font-weight:lighter;
+    font-size: medium;
+    margin-top: 1px;
+}
+
+.profile-content-wrapper p2{
+    color: dimgrey;
+    font-weight:lighter;
+    font-size: medium;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.profile-content-wrapper a{
+    color: #0072b1;
+    font-weight:lighter;
+    font-size: medium;
+    margin-top: 1px;
+    text-decoration: underline;
 }
