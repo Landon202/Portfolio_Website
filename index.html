@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Welcome To My Website!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar-wrapper">
+                <div class="left-side">
+                    <div class="navbar-link-wrapper active-nav-link">
+                        <a href="index.html">HOME</a>
+                    </div>
+
+                    <div class="navbar-link-wrapper">
+                        <a href="about.html">ABOUT ME</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>Landon Hall - Software Engineer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/HealthEquityBackground.avif)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <div class="skill-title-text">
+                                    HealthEquity
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="subtitle">
+                                Complete rework of domain page functionality to increase substantiation rates and allow tiered user functionality. 
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/MicroserviceBackground.avif)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <div class="skill-title-text">
+                                    Microservices
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="subtitle">
+                                Helped create a microservice for auto renewals of plans including integration with SalesForce.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/AutomationTestingBackground.avif)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <div class="skill-title-text">
+                                    Automation Testing
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="subtitle">
+                                Built and maintained over 1k automation tests in multiple suites using Azure DevOps.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/SAFeBackground.avif)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <div class="skill-title-text">
+                                    SAFe/Agile
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="subtitle">
+                                Four years experience working in SAFe/Agile with CI/CD Pipeline. 
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/DevMountainBackground.avif)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <div class="skill-title-text">
+                                    Mentoring
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="subtitle">
+                                Mentored multiple Software Engineers in Test, teaching them C# and OOP Principles.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/Keyboard.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <div class="skill-title-text">
+                                    Hobbies
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="subtitle">
+                                Catch me on the weekends hiking, camping, mountain biking, building computers and playing games.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+
+</html>

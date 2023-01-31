@@ -1,0 +1,144 @@
+/* Master styles*/
+
+body{
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Navbar Styles*/
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.left-side {
+    display: flex;
+}
+
+.right-side {
+    color: dimgrey;
+}
+
+.navbar-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.navbar-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navbar-link-wrapper a {
+    color:darkgray;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navbar-link-wrapper:hover {
+    border-bottom: 1px solid darkgrey;
+}
+
+.navbar-link-wrapper a:hover {
+    color: darkgrey;
+}
+
+/*Portfolio Styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .75;
+    height: 350px;
+    width: 100%;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.skill-title-text {
+    font-size: 60px;
+    color: rgb(34, 34, 34) ;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    color:rgb(255, 255, 255);
+}
+
+.img-text-wrapper:hover .skill-title-text {
+    transition: 1s;
+    color:rgb(255, 255, 255);
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(15%);
+}
+
+.active-nav-link {
+    border-bottom: 1px solid grey;
+}
+
+.active-nav-link a {
+    color: grey !important;
+}
+
+/*About Styles*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 50%;
+    position: center;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    color: black;
+}
