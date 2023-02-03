@@ -157,7 +157,6 @@ body{
     font-weight:lighter;
     font-size: large;
     margin-bottom: 5px;
-    margin-top: 10%;
 }
 
 .profile-content-wrapper p{
@@ -181,4 +180,16 @@ body{
     font-size: medium;
     margin-top: 1px;
     text-decoration: underline;
+}
+
+.profile-empty-wrapper {
+    padding-left: 25%;
+    padding-top: 10%;
+}
+
+.logo {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
