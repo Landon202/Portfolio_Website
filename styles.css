@@ -22,6 +22,7 @@ body{
 
 .left-side {
     display: flex;
+    color: dimgrey;
 }
 
 .right-side {
@@ -30,7 +31,7 @@ body{
 
 .navbar-wrapper > .left-side > div {
     margin-right: 20px;
-    font-size: 0.9em;
+    font-size: .95em;
 }
 
 .navbar-link-wrapper {
