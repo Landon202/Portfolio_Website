@@ -157,6 +157,14 @@
             portfolioItem.addEventListener('mouseout', () => {
                 portfolioItem.childNodes[1].classList.remove('img-darken');
             })
+
+            portfolioItem.addEventListener('touchend', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('touchstart', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
         })
     </script>
 
