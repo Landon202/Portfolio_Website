@@ -184,13 +184,14 @@ body{
 }
 
 .profile-empty-wrapper {
-    padding-left: 25%;
+    padding-left: 10%;
     padding-top: 10%;
-    opacity: 60%;
+    opacity: 75%;
 }
 
 .logo {
     object-fit: cover;
+    float: left;
     border-radius: 50%;
     height: 150px;
     width: 150px;
